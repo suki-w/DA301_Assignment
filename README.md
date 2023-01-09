@@ -1,5 +1,6 @@
 # DA301_Assignment
 
+
 Week 1
 
 As a data analyst working for Turtle Games and with this week’s objective as looking into how customers accumulate loyalty points, I will explore the relationship between loyalty points, age, remuneration and spending scores. The Ordinary Least Square (OLS) method is used to develop the linear regression model and create the linear equation.
@@ -13,8 +14,6 @@ As a data analyst working for Turtle Games and with this week’s objective as l
 <Spending & Remuneration vs Loyalty> Extending from the analysis above, a multi-linear regression is performed to delve into the relationship of the Spending Score, Remuneration and Loyalty Points variables. The Adjusted R-squared of the multi-linear regression model is 0.83 which strongly explains the variability of Loyalty Points, and the VIF factors of Spending Score & Remuneration are both 1, reflecting no correlation between the two variables. Coefficients of the 2 variables are 32.6 and 34.3, small differences in the values reckon that Spending Score and Remuneration exert similar impact on the Loyalty Points variability.
 
 To conclude, the relationship between the three variables can be summarised by the equation y = 32.6x1 + 34.3x2 -1700.3, where x1 = Spending and x2 = Remuneration. The relationship is positive, i.e. the higher-income and higher-spending the customer is, the higher loyalty he has over Turtle Games. However, it has been observed that as the spending and remuneration amount increases to a certain extent, the occurrence of outliers increases too, it would be worthwhile to further explore the data through other linear models.
-
-
 
 
 Week 2
@@ -41,3 +40,27 @@ We can analyse each word by examining their frequency distribution, shortlisting
 The entire Review and Summary column from the raw data is then evaluated by sentiment polarity, from which a common pattern is found from the customer review summary - most of the reviews with negative sentiment relate to the key word “disappointing”, implying that there is an gap between the expectation of product deliverables vs the actual deliverables customers perceive.
 
 To further dive into the root cause, we can extract the product IDs associated with these negative reviews to see if the comments are generated from a specific range or items, so that more consolidated efforts can be put to refine the product quality or review the product descriptions/ marketing messages to minimise false expectations.
+
+
+Week 4
+
+The sales raw data is being explored on R, using the Tidyverse package. To start with, the datatype of the Platform and Product columns are changed to factor type to ensure they can be analysed from a categorical perspective. Through sense checking, it is noticed that one unique product may be associated with more than one line of data in the data set.
+
+Scatterplots, histograms and boxplots are used to identify trends in the EDA:
+
+<Scatterplots> Scatterplots can be used when attempting to explore the relationship of two sets of numeric data. Therefore EU Sales data has been used to compare against NA Sales data through the scatterplot, and the result shows that a certain level of positive correlation exists between the sales performance in the two regions. It is definitely worthwhile to explore the relationship further.
+
+<Histograms> Histograms are mainly used to display the distribution frequency of numeric data consolidated in scaled intervals. In this analysis histogram visualisations do not give much insights on sales, especially when each line of data does not necessarily represent one unique product.
+
+<Boxplots> Boxplots can be used to preview statistical distribution of the sales data and identify outliers. From the boxplots, it is observed that outliers are present across Global, NA and EU sales data, and there is one outlier with extreme value within the Global data set that exclusion of it would help improve visualisation quality of the boxplot. The other metrics such as IQR, mean etc. reflected from the boxplot give limited insights though, as each line of data does not necessarily represent one unique product. Further aggregation of product sales data is required for a more accurate visualisation.
+
+
+Week 5
+
+Data has been further manipulated to enable more in-depth EDA - firstly, product sales have been grouped to provide total regional/ global sales by product. Scatterplots, histograms and boxplots are plotted again to visualise the insights. We can now conclude the product sales are in general positively skewed, as seen from the histogram with peak leaning towards the left, and a median line leaning towards the left plus a shorter left whisker in the boxplot.
+
+Reviewing product sales distribution across platforms would also provide insights. As we look at the scatterplot zooming in on the correlation between regional/ global sales and product count, it is observed from the outlier that PC as a platform generates limited sales despite that it carries a wide range of products.
+
+We then need to determine the normality of product sales with the Q-Q plot, Shapiro-Wilk test, skewness, and kurtosis. From the Q-Q plot, it is observed the sales distribution is far from normal distribution, given the significant deviation from the theoretical quantile lines. Same conclusion can be made from the Shapiro-Wilk test with p-value <0.05. All 3 sets of sales data have skewness ranges from 2.89 to 3.07 (>0), confirming that all of them are highly positively skewed; whereas their kurtosis ranges from 15.6 to 17.8 (>3), implying that their curves have very sharp peaks and heavy tails.
+
+A scatterplot with best fit lines is then plotted to explore the level of correlation between NA and EU Sales across platforms. Platform DS, 3DS and Wii are observed with the highest sales correlation between region NA and EU, i.e. the right sales strategies can possibly drive synergetic sales momentum across both regions.
