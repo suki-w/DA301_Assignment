@@ -64,3 +64,22 @@ Reviewing product sales distribution across platforms would also provide insight
 We then need to determine the normality of product sales with the Q-Q plot, Shapiro-Wilk test, skewness, and kurtosis. From the Q-Q plot, it is observed the sales distribution is far from normal distribution, given the significant deviation from the theoretical quantile lines. Same conclusion can be made from the Shapiro-Wilk test with p-value <0.05. All 3 sets of sales data have skewness ranges from 2.89 to 3.07 (>0), confirming that all of them are highly positively skewed; whereas their kurtosis ranges from 15.6 to 17.8 (>3), implying that their curves have very sharp peaks and heavy tails.
 
 A scatterplot with best fit lines is then plotted to explore the level of correlation between NA and EU Sales across platforms. Platform DS, 3DS and Wii are observed with the highest sales correlation between region NA and EU, i.e. the right sales strategies can possibly drive synergetic sales momentum across both regions.
+
+
+Week 6
+
+Global, NA and EU Sales have been fitted into linear regression models to delve into their correlations. There is a positive correlation between NA Sales vs EU Sales (0.62), NA Sales vs Global Sales (0.92) as well as EU Sales vs Global Sales (85%), with coefficients of 0.92, 0.51 and 0.32 respectively. The model for NA vs EU Sales does not fit very well with R-squared equaling to 0.38, yet the other two models fit fairly well with R-squared equaling to 0.84 and 0.72 respectively.
+
+A multi-linear regression model is then fitted in to evaluate how NA Sales and EU Sales correlate to Global Sales. The models fit very well with R-square being 0.97 together with low standard errors. The model has defined coefficient of NA Sales as 1.15 and that of EU Sales as 1.34, implying that EU Sales have slightly more influence over Global Sales than NA Sales. Leveraging the model, forecasted Global Sales values have been generated and compared against the observed values - three of the forecasted values are predicted correctly with limited variances, whereas the other two are seen with greater variances.
+
+
+Recommendations
+
+The following recommendations can be provided to Turtle Games for future growth:
+
+Target customers with profile of mid to high spending plus mid to high remuneration to drive loyalty engagements
+Consider further investments on websites as customers review from there tend to be relatively more positive
+Investigate what has caused “disappointments” to customers in their purchase, as seen in majority of the negative customer reviews
+Develop concerted sales strategies over platform DS, 3DS and Wii, as there can be synergistic impact on sales given their high level of correlation over sales of NA and EU
+Review product offerings on platform PC as the platform carries a wide range of products yet generates limited sales
+EU Sales have slightly higher influence on Global Sales than NA Sales, sales efforts in EU should be prioritised
