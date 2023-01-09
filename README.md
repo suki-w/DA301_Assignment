@@ -77,9 +77,10 @@ Recommendations
 
 The following recommendations can be provided to Turtle Games for future growth:
 
-Target customers with profile of mid to high spending plus mid to high remuneration to drive loyalty engagements
-Consider further investments on websites as customers review from there tend to be relatively more positive
-Investigate what has caused “disappointments” to customers in their purchase, as seen in majority of the negative customer reviews
-Develop concerted sales strategies over platform DS, 3DS and Wii, as there can be synergistic impact on sales given their high level of correlation over sales of NA and EU
-Review product offerings on platform PC as the platform carries a wide range of products yet generates limited sales
-EU Sales have slightly higher influence on Global Sales than NA Sales, sales efforts in EU should be prioritised
+- Target customers with profile of mid to high spending plus mid to high remuneration to drive loyalty engagements
+- Review product portfolio on website, bring good products from online to offline and review products that generate negative sentiments
+- Investigate what has caused “disappointments” to customers in their purchase, as seen in majority of the negative customer reviews
+- Develop concerted sales strategies over platform DS, 3DS and Wii, as there can be synergistic impact on sales given their high level of correlation over sales of NA and EU
+- Review product offerings on platform PC as the platform carries a wide range of products yet generates limited sales
+- EU Sales have slightly higher influence on Global Sales than NA Sales, sales efforts in EU should be prioritised
+
