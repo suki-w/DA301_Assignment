@@ -83,5 +83,4 @@ The following recommendations can be provided to Turtle Games for future growth:
 - Investigate what has caused “disappointments” to customers in their purchase, as seen in majority of the negative customer reviews
 - Develop concerted sales strategies over platform DS, 3DS and Wii, as there can be synergistic impact on sales given their high level of correlation over sales of NA and EU
 - Review product offerings on platform PC as the platform carries a wide range of products yet generates limited sales
-- EU Sales have slightly higher influence on Global Sales than NA Sales, sales efforts in EU should be prioritised
 
