@@ -1,6 +1,6 @@
 # DA301_Assignment
 
-Link to presentation video: https://drive.google.com/file/d/1GDDNB91xNVpSyR2bweOg7OfaF9Y4fnAh/view?usp=sharing
+Link to presentation video: https://drive.google.com/drive/folders/1W5sPGXIyv8yhBI7Umzzwxwj2gizA-412?usp=share_link
 
 Week 1
 
